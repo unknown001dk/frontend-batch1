@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pure CSS Typing Effect</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200vh; /* For scrolling effect */
+      }
+
+      /* Typing Effect */
+      .typing {
+        font-size: 24px;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid black;
+        width: 0;
+        animation: typing 10s steps(20, end) infinite,
+          blink 0.75s step-end infinite;
+      }
+
+      @keyframes typing {
+        0% {
+          width: 0;
+        }
+        50% {
+          width: 35%;
+        }
+        100% { width: 0; }
+      }
+
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      /* Scroll Reveal Effect */
+      .scroll-reveal {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+      }
+
+      .scroll-reveal-trigger:target .scroll-reveal {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="typing">Welcome to HashStart Academy!</h1>
+
+    <div style="height: 100vh"></div>
+    <!-- Scroll space -->
+
+    <a href="#reveal">Scroll down to reveal</a>
+
+    <div id="reveal" class="scroll-reveal-trigger">
+      <h2 class="scroll-reveal">This is revealed on scroll</h2>
+    </div>
+  </body>
+</html>

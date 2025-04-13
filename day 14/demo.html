@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - SkillBurst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: { night: "#0f172a" },
+            animation: {
+              fade: "fadeIn 1s ease-in-out",
+              slide: "slideIn 0.8s ease-out",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: 0 },
+                "100%": { opacity: 1 },
+              },
+              slideIn: {
+                "0%": { transform: "translateY(30px)", opacity: 0 },
+                "100%": { transform: "translateY(0)", opacity: 1 },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white dark:bg-night text-gray-800 dark:text-white">
+    <!-- Header -->
+    <!-- Header -->
+    <header
+      class="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 p-4 shadow fixed w-full z-50"
+    >
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">SkillBurst</h1>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-6 text-white">
+          <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
+          <a href="about.html" class="hover:text-yellow-300 transition"
+            >About</a
+          >
+          <a href="dashboard.html" class="hover:text-yellow-300 transition"
+            >Dashboard</a
+          >
+          <a href="login.html" class="hover:text-yellow-300 transition"
+            >Login</a
+          >
+        </nav>
+
+        <!-- Mobile Hamburger -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav
+        id="mobile-menu"
+        class="md:hidden hidden flex-col px-4 pt-4 pb-2 space-y-2 text-center blur-xs bg-transparent text-white"
+      >
+        <a href="index.html" class="block hover:text-yellow-300 transition"
+          >Home</a
+        >
+        <a href="about.html" class="block hover:text-yellow-300 transition"
+          >About</a
+        >
+        <a href="dashboard.html" class="block hover:text-yellow-300 transition"
+          >Dashboard</a
+        >
+        <a href="login.html" class="block hover:text-yellow-300 transition"
+          >Login</a
+        >
+      </nav>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const toggleBtn = document.getElementById("menu-toggle");
+          const mobileMenu = document.getElementById("mobile-menu");
+
+          toggleBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+          });
+        });
+      </script>
+    </header>
+
+    <!-- Dashboard Content -->
+    <main class="pt-32 px-4 max-w-6xl mx-auto animate-slide">
+      <h2 class="text-3xl font-bold mb-6 text-purple-700 dark:text-pink-400">
+        Welcome Back 👋
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div
+          class="p-6 bg-purple-100 dark:bg-zinc-800 rounded-xl shadow-md hover:scale-105 transition"
+        >
+          <h3 class="font-semibold text-lg mb-2">Your Progress</h3>
+          <p>Track how far you've come with projects and lessons.</p>
+        </div>
+        <div
+          class="p-6 bg-purple-100 dark:bg-zinc-800 rounded-xl shadow-md hover:scale-105 transition"
+        >
+          <h3 class="font-semibold text-lg mb-2">New Resources</h3>
+          <p>Check out the latest lessons, cheat sheets, and videos.</p>
+        </div>
+        <div
+          class="p-6 bg-purple-100 dark:bg-zinc-800 rounded-xl shadow-md hover:scale-105 transition"
+        >
+          <h3 class="font-semibold text-lg mb-2">Community</h3>
+          <p>Join discussions and find your next coding buddy.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900 text-white text-center py-4 mt-20">
+      &copy; 2025 SkillBurst. Built with ❤️ and Tailwind CSS.
+    </footer>
+  </body>
+</html>

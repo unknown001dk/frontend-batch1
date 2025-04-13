@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 8</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    #popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ed6f6f;
+      padding: 20px;
+      border-radius: 5px;
+      /* display: none; */
+      z-index: 100;
+      /* transition: fadeIn 5s ease; */
+      animation: fadeIn 5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="flex container">
+    <div class="box-1 box self">1</div>
+    <div class="box-2 box">2</div>
+    <div class="box-3 box">3</div>
+    <div class="box-4 box">4</div>
+  </div> -->
+
+  <button popovertarget="popup">popup</button>
+
+  <div id="popup" popover>
+    <h1>Hey this is popup!!</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error assumenda laudantium velit quam totam excepturi ea nulla sed, consectetur, ab suscipit voluptatibus blanditiis, dicta magnam recusandae similique corrupti vero?</p>
+    <hr>
+    <button popovertarget="popup">Close</button>
+  </div>
+  
+
+</body>
+</html>

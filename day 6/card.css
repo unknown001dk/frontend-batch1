@@ -1,0 +1,44 @@
+body {
+  background-color: #f16868;
+}
+
+/* 
+  name ( green, red, blue )
+  hex (#fff) hexadecimal
+  rgb(255, 255, 255) red green blue
+  rgba(255, 255, 255, 0)
+  hsl(0, 0%, 100%) - (hue saturation lightness )
+*/
+
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card h2 {
+  text-align: center;
+  color: #fc5a5a;
+}
+
+.card input {
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 5px;
+  outline: none;
+}
+
+.btn {
+  background-color: #fc5a5a;
+  color: #fff;
+  border-style: none;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}

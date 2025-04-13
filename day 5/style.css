@@ -1,0 +1,31 @@
+.card {
+  /* background-color: red; */
+  width: 300px;
+  height: 150px;
+  /* color: white; */
+  text-align: justify;
+}
+
+.card p {
+  /* text spacing */
+  text-indent: 30px;
+  /* letter-spacing: 2px;
+  line-height: 50px; */
+  /* word-spacing: 20px; */
+}
+/* 
+  colors
+    1. name
+    2. RGB (RED, green, blue)
+    3. HEX (hexadecimal)
+    4. HSL 
+
+    #33 33 33
+    # 3 3 3
+*/
+
+.card h3 {
+  color: red;
+  /* text-shadow: 0px 5px 4px #333; */
+  text-shadow: 10px 10px 3px #ea2020;
+}

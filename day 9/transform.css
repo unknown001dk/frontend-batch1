@@ -1,0 +1,10 @@
+div {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  transition: transform 5s linear;
+}
+
+div:hover {
+  transform: rotate(20deg);
+}

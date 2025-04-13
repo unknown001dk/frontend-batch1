@@ -1,0 +1,35 @@
+body {
+  background-color: #f342;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+header span {
+  color: green;
+  font-weight: 900;
+}

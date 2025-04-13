@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitLife</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/laptop.avif"
+      type="image/x-icon"
+    />
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-gray-900 text-white font-[Courier_New]">
+    <header
+      class="flex justify-between items-center p-5 bg-gray-800 sticky top-0 z-100 shadow-lg"
+    >
+      <h1 class="text-2xl font-bold text-indigo-400">FitLife</h1>
+      <nav class="hidden md:flex gap-6">
+        <a href="#home" class="hover:text-indigo-400 hover:underline">Home</a>
+        <a href="#workout" class="hover:text-indigo-400 hover:underline"
+          >Workouts</a
+        >
+        <a href="#plan" class="hover:text-indigo-400 hover:underline">Plans</a>
+        <a href="#contact" class="hover:text-indigo-400 hover:underline"
+          >Contact</a
+        >
+      </nav>
+      <div class="md:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="text-center py-20 bg-gray-950" id="home">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Your Fitness Starts Here
+      </h2>
+      <p class="text-xl p-4 mr-4">Train Hard. Stay fit. Be Consistent</p>
+      <button
+        class="relative mt-6 px-6 py-2 bg-indigo-500 text-white rounded cursor-pointer hover:bg-indigo-700 hover:scale-105 transition"
+      >
+        Join Now
+      </button>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 px-6 md:px-20 bg-gray-800" id="workout">
+      <h3 class="text-3xl font-semibold mb-12 relative heading">
+        Why Choose FitLife?
+      </h3>
+      <div class="flex flex-wrap gap-10 text-center justify-center">
+        <div
+          class="bg-gray-900 p-6 rounded-lg shadow-lg w-full md:w-1/3 hover:scale-105 transition"
+        >
+          <h4 class="text-xl font-bold mb-4 text-indigo-400">Expert Coaches</h4>
+          <p class="text-justify">
+            Get Guidance from certified professionals who care about your
+            progess.
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-900 p-6 rounded-lg shadow-lg w-full md:w-1/3 hover:scale-105 transition"
+        >
+          <h4 class="text-xl font-bold mb-4 text-indigo-400">
+            Customized Plans
+          </h4>
+          <p class="text-justify">
+            Every body is different. Get a workout and meal plan that suits your
+            goals.
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-900 p-6 rounded-lg shadow-lg w-full md:w-1/3 hover:scale-105 transition"
+        >
+          <h4 class="text-xl font-bold mb-4 text-indigo-400">24/7 Access</h4>
+          <p class="text-justify">
+            Access your plans and progess anytime, anywhere through our app.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- workouts -->
+    <section class="py-16 px-6 md:px-20" id="plan">
+      <h3 class="text-3xl font-semibold mb-12 relative heading">
+        Workout Plans
+      </h3>
+      <div class="flex flex-wrap justify-center gap-10">
+        <div
+          class="w-full md:w-1/3 bg-gray-700 p-6 rounded shadow-md hover:scale-105 transition"
+        >
+          <h4 class="text-xl font-bold mb-2 text-indigo-400">Beginner Plan</h4>
+          <p>
+            Perfect for starting your journey. Includes cardio and strength
+            basics.
+          </p>
+        </div>
+
+        <div
+          class="w-full md:w-1/3 bg-gray-700 p-6 rounded shadow-md hover:scale-105 transition"
+        >
+          <h4 class="text-xl font-bold mb-2 text-indigo-400">
+            Intermediate Plan
+          </h4>
+          <p>Take your workout upto a notch. Focus on your tranning.</p>
+        </div>
+
+        <div
+          class="w-full md:w-1/3 bg-gray-700 p-6 rounded shadow-md hover:scale-105 transition"
+        >
+          <h4 class="text-xl font-bold mb-2 text-indigo-400">Advanced Plan</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla
+            non fugiat natus quod .
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="py-20 bg-gray-950 px-6 md:px-20">
+      <h3 class="text-3xl font-semibold mb-12 relative heading">
+        What Our Users Say?
+      </h3>
+      <div class="flex flex-wrap justify-center gap-10">
+        <div
+          class="w-full md:w-2/5 bg-gray-800 p-6 rounded-lg hover:scale-105 transition"
+        >
+          <p class="italic">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
+            consequatur vitae? Temporibus dicta quia dolores necessitatibus
+            autem quaerat! Facere natus atque maxime cupiditate voluptas nihil
+            harum molestiae exercitationem nulla accusantium?
+          </p>
+          <p class="mt-4 font-bold text-indigo-400">-DK, April-5</p>
+        </div>
+        <div
+          class="w-full md:w-2/5 bg-gray-800 p-6 rounded-lg hover:scale-105 transition"
+        >
+          <p class="italic">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni,
+            officia id laboriosam distinctio fugiat pariatur excepturi!
+            Molestias, nulla, dolore laboriosam porro autem quidem suscipit
+            tempore harum doloribus assumenda consequatur dolorem.
+          </p>
+          <p class="mt-4 font-bold text-indigo-400">-Dinesh, April-1</p>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section class="py-20 text-center bg-indigo-400" id="contact">
+      <h2 class="text-4xl font-bold mb-4">Ready to Transform?</h2>
+      <p class="text-lg mb-6 text-justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit ipsum
+        asperiores deserunt adipisci facere ratione. Ea illum perspiciatis
+        blanditiis culpa eum optio rerum, accusamus nobis sed tenetur quo
+        aliquid consectetur.
+      </p>
+      <button
+        class="bg-white text-indigo-800 font-semibold py-2 px-6 rounded hover:scale-105 hover:bg-gray-200 transition"
+      >
+        Get start
+      </button>
+    </section>
+    <footer class="bg-gray-800 text-center py-6">
+      <p>&copy; 2025 Fitlife. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

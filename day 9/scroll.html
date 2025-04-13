@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Scroll Reveal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 600px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        /* Scroll Trigger */
+        .scroll-trigger:target .content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Blog</h1>
+    <p>Scroll down to reveal content</p>
+
+    <div style="height: 100vh;"></div> <!-- Scroll space -->
+
+    <a href="#reveal">Reveal More</a>
+
+    <div id="reveal" class="scroll-trigger">
+        <div class="content">
+            <h2>Hidden Blog Content</h2>
+            <p>This text appears when you scroll!</p>
+        </div>
+    </div>
+
+</body>
+</html>

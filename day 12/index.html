@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protfolio Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">Portfolio</div>
+        <nav>
+          <ul id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div id="menu-toggle" class="menu-toggle">
+            <a style="color: #fff;" onclick="toggleMenu()">
+              <i class="fa-solid fa-bars open"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content fade-in-up">
+          <h2>Hello, I'm <span class="typewriter">Dinesh kumar</span></h2>
+          <p>
+            A passionate Frontend Developer with 3+ years of experience creating
+            responsive and user-friendly web applications. I specialize in
+            turning ideas into beautiful, functional websites.
+          </p>
+          <div>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="">
+        <h2 class="fade-in-up">About Me</h2>
+        <div class="about-content flex justify-center">
+          <div class="about-img fade-in-left">
+            <img
+              src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Developer working"
+            />
+          </div>
+          <div class="about-text fade-in-right">
+            <h3>Frontend Developer & UI Enthusiast</h3>
+            <p>
+              I'm a dedicated frontend developer with a strong focus on creating
+              intuitive user experiences. My journey in web development began
+              during my computer science studies, and I've been passionate about
+              it ever since.
+            </p>
+            <p>
+              I believe in writing clean, maintainable code and staying
+              up-to-date with the latest web technologies. When I'm not coding,
+              you can find me exploring new design trends, contributing to
+              open-source projects, or hiking in nature.
+            </p>
+            <p>
+              My approach combines technical expertise with creative
+              problem-solving to deliver solutions that are both functional and
+              visually appealing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="">
+        <h2 class="fade-in-up">My Skills</h2>
+        <h3 class="fade-in-up delay-1">Technologies I work with</h3>
+        <div class="skills-container">
+          <div class="skills-grid justify-center">
+            <div class="skill-item fade-in-up delay-1">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h4>HTML5</h4>
+              <p>Semantic markup, accessibility</p>
+            </div>
+            <div class="skill-item fade-in-up delay-2">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <h4>CSS3</h4>
+              <p>Flexbox, Grid, Animations</p>
+            </div>
+            <div class="skill-item fade-in-up delay-3">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <h4>JavaScript</h4>
+              <p>ES6+, DOM manipulation</p>
+            </div>
+            <div class="skill-item fade-in-up delay-4">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h4>React</h4>
+              <p>Hooks, Context API</p>
+            </div>
+            <div class="skill-item fade-in-up delay-1">
+              <div class="skill-icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <h4>Git</h4>
+              <p>Version control, GitHub</p>
+            </div>
+            <div class="skill-item fade-in-up delay-2">
+              <div class="skill-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h4>Responsive</h4>
+              <p>Mobile-first design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="">
+        <h2 class="fade-in-up">My Projects</h2>
+        <div class="project-grid justify-center">
+          <div class="project-card  fade-in-left delay-1">
+            <div class="project-img ">
+              <img
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="E-commerce Project"
+              />
+            </div>
+            <div class="project-info">
+              <h3>E-commerce Platform</h3>
+              <div class="small">
+                <p>
+                  A full-featured online store with product filtering, cart
+                  functionality, and checkout process.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Redux</span>
+                <span>Node.js</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-demo">Live Demo</a>
+                <a href="#" class="btn-code">View Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card fade-in-up delay-2">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Task Manager"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Task Management App</h3>
+              <p class="small">
+                A productivity application for organizing tasks with
+                drag-and-drop functionality and team collaboration.
+              </p>
+              <div class="project-tags">
+                <span>Vue.js</span>
+                <span>Firebase</span>
+                <span>Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-demo">Live Demo</a>
+                <a href="#" class="btn-code">View Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card fade-in-right delay-3">
+            <div class="project-img">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Weather App"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Weather Dashboard</h3>
+              <p class="small">
+                Real-time weather application with 5-day forecast using data
+                from multiple weather APIs.
+              </p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>API</span>
+                <span>Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn-demo">Live Demo</a>
+                <a href="#" class="btn-code">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="">
+        <h2 class="fade-in-up">Get In Touch</h2>
+        <div class="contact-container flex-wrap">
+          <div class="contact-info">
+            <h3 class="fade-in-left delay-1">Contact Information</h3>
+            <p class="fade-in-left delay-2">
+              Feel free to reach out to me for any questions or opportunities.
+              I'm always open to discussing new projects, creative ideas or
+              opportunities to be part of your vision.
+            </p>
+            <ul>
+              <li class="fade-in-left delay-1">
+                <i class="fas fa-envelope"></i>
+                <span>alex.johnson@example.com</span>
+              </li>
+              <li class="fade-in-left delay-2">
+                <i class="fas fa-phone"></i>
+                <span>+1 (555) 123-4567</span>
+              </li>
+              <li class="fade-in-left delay-3">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>San Francisco, CA</span>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm" class="fade-in-right delay-1">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="">
+        <div class="social-links">
+          <a href="#" class="fade-in delay-1"><i class="fab fa-github"></i></a>
+          <a href="#" class="fade-in delay-2"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="fade-in delay-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="fade-in delay-4"><i class="fab fa-codepen"></i></a>
+        </div>
+        <p>© 2025 Hashstart academy. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const query = document.getElementById("nav-links");
+        if (query.style.display === "block") {
+          query.style.display = "none"; // Hide the menu
+        } else {
+          query.style.display = "block"; // Show the menu
+        }
+      }
+    </script>
+  </body>
+</html>

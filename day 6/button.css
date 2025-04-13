@@ -1,0 +1,19 @@
+body {
+  /* background-color: #f65959; */
+}
+
+.btn {
+  background-color: rgba(225, 255, 225, 0.836);
+  border-color: rgb(75, 247, 75);
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px;
+  color: #24c11f;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(75, 247, 75);
+  color: white;
+}
