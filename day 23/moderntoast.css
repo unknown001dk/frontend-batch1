@@ -1,0 +1,72 @@
+body {
+  padding: 30px;
+  background-color: #f1f1f1;
+}
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.toast {
+  min-width: 250px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideIn 0.5s forwards, fadeOut ease 2.5s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    /* display: none; */
+    /* transform: translateY(-20px); */
+  }
+}
+.toast.success {
+  background-color: #28a745;
+}
+.toast.error {
+  background-color: #dc3545;
+}
+.toast.warning {
+  background-color: #ffc107;
+}
+.toast.info {
+  background-color: #17a2b8;
+}
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+.btn-success {
+  background-color: #28a745;
+}
+.btn-error {
+  background-color: #dc3545;
+}
+.btn-warning {
+  background-color: #ffc107;
+}
+.btn-info {
+  background-color: #17a2b8;
+}

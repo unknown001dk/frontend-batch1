@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="./moderntoast.css">
+</head>
+<body>
+  <h2>Toast Notifications</h2>
+
+  <button class="btn-success" onclick="showToast('Success!', 'success')">Show Success</button>
+  <button class="btn-error" onclick="showToast('Error!', 'error')">Show Error</button>
+  <button class="btn-warning" onclick="showToast('warning!', 'warning')">Show Warning</button>
+  <button class="btn-info" onclick="showToast('Info!', 'info')">Show Info</button>
+
+  <div class="toast-container" id="toastContainer"></div>
+</body>
+<script src="./moderntoast.js"></script>
+</html>

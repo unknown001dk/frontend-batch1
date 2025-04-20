@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Charater Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    #msgBox {
+      width: 90%;
+      height: 100px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    #charCounter {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h2>Feddback</h2>
+
+  <textarea id="msgBox" placeholder="Type you message..."></textarea>
+  <div id="charCounter">1000 characters remaining</div>
+</body>
+<script>
+const textarea = document.getElementById('msgBox');
+const counter = document.getElementById('charCounter');
+const maxLength = 1000;
+
+textarea.addEventListener("input", function() {
+  const currentLength = textarea.value.length;
+  const remainingLength = maxLength - currentLength;
+
+  if ( remainingLength >= 0) {
+    counter.textContent = `${remainingLength} characters remaining`;
+  } else {
+    alert("You have exceeded the maximum character limit!");
+    textarea.value = textarea.value.substring(0, maxLength);
+    counter.textContent = `0 characters remaining`;
+  }
+})
+</script>
+</html>

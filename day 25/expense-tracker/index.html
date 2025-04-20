@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h2>Expense Tracker</h2>
+    <input type="text" id="desc" placeholder="Enter your description">
+    <input type="number" id="amount" placeholder="Enter amount">
+    <select id="type">
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+    <button onclick="addTransaction()">Add</button>
+
+    <div class="balance" id="balance">Balance: ₹0</div>
+    <ul id="list"></ul>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>

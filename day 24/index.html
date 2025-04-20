@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to cart</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Simple cart</h1>
+    <!-- products -->
+    <div class="container">
+      <div class="product">
+        <h2>products</h2>
+        <div id="productList"></div>
+      </div>
+    </div>
+    <!-- cart -->
+     <div class="cart">
+      <h2>Your carts</h2>
+      <div id="cartItems"></div>
+      <div id="toatlPrice"></div>
+      <button class="clear-cart" onclick="clearCart()">Clear cart</button>
+     </div>
+     <!-- toast -->
+    <div class="toast" id="toast">Items added to cart Successfully!</div>
+  </body>
+  <script src="./script.js"></script>
+</html>

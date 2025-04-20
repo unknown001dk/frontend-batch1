@@ -1,0 +1,13 @@
+body {
+  background-color: #899ff8;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  /* background-color: #fff; */
+}
