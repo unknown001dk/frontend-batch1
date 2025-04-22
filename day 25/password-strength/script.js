@@ -31,3 +31,8 @@ passwordInput.addEventListener("input", () => {
     strengthText.textContent = "Strength: Strong";
   }
 });
+
+// create add two functions
+function add(num1, num2) {
+  return num1 + num2;
+}

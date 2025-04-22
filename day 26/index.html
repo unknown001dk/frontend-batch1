@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow-lg p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">🏠Myshop</h1>
+      <input
+        type="text"
+        class="px-3 py-1 border rounded"
+        id="search"
+        placeholder="Search products.."
+      />
+      <select id="filter" class="px-2 py-1 border ml-2 rounded">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+      </select>
+      <button
+        class="bg-blue-400 px-3 py-1 rounded text-white font-bold hover:bg-blue-500 transition" id="loginBtn"
+      >
+        Login
+      </button>
+      
+      <button>🛒(<span id="cartCount">0</span>)</button>
+    </header>
+    <main>
+      <!-- products -->
+      <div
+        id="productList"
+        class="flex justify-center items-center gap-2 flex-wrap"
+      ></div>
+
+      <!-- pagination -->
+      <div class="mt-6 flex justify-center items-center space-x-4">
+        <button class="bg-gray-300 px-3 py-1 rounded" id="prevPage">Prev</button>
+        <span id="pageNum">1</span>
+        <button class="bg-gray-300 px-3 py-1 rounded" id="nextPage">Next</button>
+      </div>
+
+      <!-- login modal -->
+      <div id="loginModal" class="fixed bg-black bg-opacity-50 inset-0 flex justify-center items-center z-100 hidden">
+        <div class="bg-white p-6 rounded shadow-lg w-80">
+          <h2 class="text-xl font-bold mb-4 text-center">Login</h2>
+          <input type="email" class="w-full border p-2 rounded mb-3" placeholder="Email..">
+          <input type="password" class="w-full border p-2 rounded mb-3" placeholder="Password..">
+          <button class="bg-blue-400 hover:bg-blue-500 rounded px-3 py-1 text-white font-bold w-full mb-3">Login</button>
+          <p class="text-sm text-center mt-2 ">No Account? <span class="text-blue-600 cursor-pointer hover:text-blue-700 hover:underline" id="showRegister">Sign Up</span></p>
+        </div>
+      </div>
+
+      <!-- register modal -->
+      <div id="registerModal" class="fixed bg-black bg-opacity-50 inset-0 flex justify-center items-center z-100 hidden">
+        <div class="bg-white p-6 rounded shadow-lg w-80">
+          <h2 class="text-xl font-bold mb-4">Register</h2>
+          <input type="email" class="w-full border p-2 rounded mb-3" placeholder="Email..">
+          <input type="text" class="w-full border p-2 rounded mb-3" placeholder="Username..">
+          <input type="password" class="w-full border p-2 rounded mb-3" placeholder="Password..">
+          <button class="bg-blue-400 hover:bg-blue-500 rounded px-3 py-1 text-white font-bold w-full mb-3">Register</button>
+          <p class="text-sm text-center mt-2 ">Have an account? <span class="text-blue-600 cursor-pointer hover:text-blue-700 hover:underline" id="showLogin">Login</span></p>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
