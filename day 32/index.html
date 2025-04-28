@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products Management</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <div class="flex justify-between items-center p-4">
+    <h1 class="text-emerald-600 font-bold text-2xl">Products</h1>
+    <div>
+      <a href="./add.html" class="bg-emerald-600 px-4 py-2 rounded text-white hover:bg-emerald-700 transition">Add product</a>
+    </div>
+  </div>
+  <div id="productList" class="flex flex-wrap gap-4"></div>
+</body>
+<script src="./js/main.js"></script>
+</html>

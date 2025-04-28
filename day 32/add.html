@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add products</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <div class="p-4">
+    <h1 class="text-2xl font-bold text-emerald-600">Add Product</h1>
+  </div>
+  <form id="add-form" class="p-4 flex flex-col gap-4">
+    <input type="text" id="product-name" placeholder="Product name" class="p-3 border rounded focus:outline-none">
+    <textarea id="product-description" placeholder="Product Description" class="p-3 rounded border focus:outline-none"></textarea>
+    <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 py-3 rounded-lg transition text-white font-semibold">Add product</button>
+  </form>
+</body>
+<script src="./js/main.js"></script>
+</html>

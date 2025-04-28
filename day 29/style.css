@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2rem;
+  color: red;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hero {
+  height: 60vh;
+  background-image: url(../assets/images/movies/baby-jhon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px 30px;
+  /* background-color: red; */
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+} 
+
+.hero-buttons button {
+  background-color: rgb(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-buttons button:hover {
+  background-color: red;
+}
+
+/* movies */
+.movie-row {
+  margin: 40px 20px;
+}
+
+.movie-row h2 {
+  margin-bottom: 10px;
+}
+
+.movie-posters {
+  display: flex;
+  overflow: auto;
+  gap: 20px;
+}
+
+.movie-posters img {
+  width: 160px;
+  height: 240px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.movie-posters img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 65px;
+    right: 0;
+    background-color: #111;
+    width: 100%;
+    /* padding: 10px; */
+    max-height: 0;
+    overflow: hidden;
+  }
+  .nav-links.open {
+    max-height: 300px;
+    padding: 10px 0;
+  }
+  .nav-links li {
+    padding: 10px 20px;
+    border-top: 1px solid #333;
+  }
+}
