@@ -1,0 +1,40 @@
+================ git commands ==============
+
+1. git version
+    git -v
+2. git initialization
+    git init
+3. git configuration
+    i. user name
+      git config --global user.name "your_github_username"
+    ii. user email
+      git config --global user.email "your_github_email"
+    iii. list
+      git config --global --list
+4. git add remote origins
+  git remote add origin your_url
+5. git add 
+  i. add file name  
+    git add file_name
+  ii. add all files by using dot
+    git add .
+6. commit 
+  git commit -m "commit_message"
+7. create a branch 
+  git branch -M branch_name
+8. push code to branch
+  git push origin branch_name
+9. switch one branch to another
+  git checkout branch_name
+10. list out all the branches
+  git branch
+11. remote repo to local repo 
+  git pull origin branch_name
+12. local repo to remote repo 
+  git push origin branch_name
+13. merge two branches  
+  git merge branch current_branch
+14. git revert 
+  git revert commit_id
+15. git clone
+  git clone url
